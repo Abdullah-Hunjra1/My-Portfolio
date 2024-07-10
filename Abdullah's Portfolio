@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: black;
+            color: #ffffff;
+        }
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 75px;
+            background-color: black;
+            color: white;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 20px;
+            padding: 0 5px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(92, 24, 24);
+        }
+
+        .right {
+            /* border: 2px solid rgb(255, 248, 248); */
+
+        }
+
+        .right ul li {
+            margin: 0 14px;
+            padding: 0 1px;
+
+        }
+
+        .right i {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        /*****    Main    *****/
+        section {
+            padding: 60px 20px;
+            min-height: 80vh;
+            border: 4px solid burlywood;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .leftSection {
+            width: 20%;
+            height: 500px;
+            /* border: 2px solid maroon; */
+            margin-left: 13%;
+            margin-top: 47px;
+            text-align: center;
+
+        }
+
+        .center-section {
+            width: 35%;
+            height: 550px;
+            /* border: 2px solid maroon; */
+
+
+        }
+
+        .my-pic {
+            width: 100%;
+            height: 550px;
+        }
+
+        .rightSection {
+            width: 20%;
+            height: 500px;
+            /* border: 2px solid maroon; */
+            margin-right: 13%;
+            margin-top: 47px;
+            text-align: center;
+
+
+        }
+
+        .FS-heading {
+            margin-top: 130px;
+            font-size: 3.3rem;
+
+
+
+        }
+
+        .FS-text {
+            font-size: 18px;
+            padding: 0 13px;
+            color: grey;
+            margin-top: -35px;
+
+
+        }
+
+        .buttons {
+            padding: 50px 0;
+            text-align: center;
+
+        }
+
+        .btn {
+            padding: 14px;
+            background: rgb(0, 0, 0);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /***    About     ***/
+
+        .about-heading1 {
+            text-align: center;
+            font-size: 2.6rem;
+            margin-top: -30px;
+
+        }
+
+        .about-main {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .about-left {
+            width: 36%;
+            margin-top: 82px;
+            margin-left: 11%;
+        }
+
+        .about-pic {
+            border-radius: 50%;
+            width: 60%;
+            height: 80%;
+        }
+
+        .about-right {
+            width: 50%;
+            margin-right: 10%;
+        }
+
+        .about-heading2 {
+            font-size: 2.8rem;
+        }
+
+        .about-text {
+            color: grey;
+            font-size: 20px;
+        }
+
+        /**  Education **/
+        /* #education{
+            justify-content: center;
+        } */
+        .education-heading1 {
+            text-align: center;
+            font-size: 2.6rem;
+            margin-top: -20px;
+
+        }
+
+        .education-main-div {
+            margin-top: 6%;
+        }
+
+        .college {
+            width: 41%;
+            height: 200px;
+            box-shadow: 3px 3px 6px 6px #272832;
+            padding: 10px;
+            margin-left: 30%;
+        }
+
+        .uni {
+            width: 41%;
+            height: 200px;
+            box-shadow: 3px 3px 6px 6px #272832;
+            padding: 10px;
+
+            margin: 44px 30%;
+        }
+
+        .heading5 {
+            color: grey;
+            margin-left: 13px;
+            margin-top: 10px;
+
+        }
+
+        .heading1 {
+            font-size: 2rem;
+            margin-left: 10px;
+            margin-top: -20px;
+
+        }
+
+        .heading3 {
+            margin-left: 10px;
+            margin-top: -20px;
+            font-size: 24px;
+
+        }
+
+        /**   Skills   **/
+
+
+        .skillSection {
+            margin: auto;
+        }
+
+        .skillheading1 {
+            text-align: center;
+            font-size: 2.6rem;
+            margin-top: -11px;
+        }
+
+        .text-color {
+            font-size: 26px;
+            color: grey;
+            margin-left: 5%;
+            margin-top: 4%;
+        }
+
+        .skillSection .box {
+            background: rgb(0, 0, 0);
+            width: 80vw;
+            height: 2px;
+            margin: 169px 74px;
+            display: flex;
+            justify-content: center;
+          
+
+        }
+
+        .skillSection .vertical {
+            height: 99px;
+            width: 1px;
+            background-color: rgb(0, 0, 0);
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 40px;
+            position: relative;
+            top: -40px;
+            left: -16px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 100px;
+            font-size: 28px;
+        }
+
+
+        /***----- Contact -----   ***/
+        /* #contact {
+            background-image: url(bc.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        } */
+        .contactheading1 {
+            text-align: center;
+            font-size: 2.6rem;
+            margin-top: -11px;
+        }
+
+        .contact-div {
+            width: 50%;
+            height: 500px;
+            margin: 6% 22%;
+        }
+
+        .contact-form {
+            margin: 28px;
+            padding: 16px;
+            background-color: rgb(72, 72, 72);
+            color: white;
+            width: 100%;
+            height: 520px;
+
+        }
+
+        .contact-form h1 {
+            font-size: 2.2rem;
+            font-weight: bolder;
+            margin-bottom: -3px;
+        }
+
+        input[type=text] {
+            width: 90%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            color: rgb(255, 255, 255);
+            background: rgb(34, 34, 34);
+
+        }
+
+        .btn-contact {
+            background-color: #000000;
+            color: white;
+            padding: 16px 12px;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            opacity: 0.8;
+            float: right;
+            margin-right: 42px;
+            margin-top: 20px;
+        }
+
+        .btn-contact:hover {
+            opacity: 1;
+        }
+
+
+        /**   Footer  **/
+
+
+        .SocialMediaIcons {
+            display: flex;
+
+        }
+
+        .SocialMediaIcons ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .SocialMediaIcons ul li {
+            list-style-type: none;
+        }
+
+        .SocialMediaIcons i {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-div {
+            justify-content: center;
+        }
+
+        .footer-center {
+            text-align: center;
+            color: #ffffff;
+            padding: 12px 0;
+            /* margin-top: 100px; */
+            background-color: #000000;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .left {
+                font-size: 1.2rem;
+                margin-left: 50px;
+            }
+
+            nav ul li {
+
+                margin: 0 7px;
+                padding: 0 2px;
+            }
+
+            .right {
+                margin-right: 80px;
+            }
+
+            .right ul li {
+                margin: 0 8px;
+                padding: 0 1px;
+            }
+
+            .right i {
+                font-size: 20px;
+            }
+
+
+        
+        }
+
+        @media (max-width: 992px) {}
+
+        @media (max-width: 768px) {}
+
+        @media (max-width: 576px) {}
+    </style>
+
+</head>
+
+
+
+
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Abdullah's Portfolio</div>
+            <div class="center">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube-play"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="firstSection">
+                <div class="leftSection">
+                    <h1 class="FS-heading">designer</h1>
+                    <p class="FS-text">Product designer specialising in UI design and design systems</p>
+                </div>
+                <div class="center-section">
+                    <img src="abdu-removebg-1.png" alt="" class="my-pic">
+                </div>
+                <div class="rightSection">
+                    <h1 class="FS-heading">&lt;coder&gt;</h1>
+                    <p class="FS-text">Frontend developer who writes clean, elegant and efficient code</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn"><a href="Modern Minimalist CV Resume.pdf" download>Download CV</a></button>
+                <button class="btn"><a href="https://github.com/Abdullah-Hunjra1">Visit Github</a></button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 class="about-heading1">About Me</h1>
+            <div class="about-main">
+                <div class="about-left">
+                    <img src="abdullah.1.jpeg" alt="" class="about-pic">
+                </div>
+                <div class="about-right">
+                    <h1 class="about-heading2">Web Developer</h1>
+                    <p class="about-text">
+                        I am a passionate Frontend Web Developer, Full Stack Web Developer, and MERN Stack Developer. My
+                        journey into web development began with a fascination for how websites work and a desire to
+                        create
+                        seamless and engaging user experiences. Over the years, I've honed my skills in HTML, CSS,
+                        JavaScript, React, Node.js, Express, and MongoDB, among other technologies.
+                        <br><br>
+                        With a strong foundation in both front-end and back-end development, I enjoy building dynamic
+                        and
+                        responsive web applications that solve real-world problems. My expertise lies in creating clean,
+                        efficient, and scalable code, ensuring that the websites and applications I develop are not only
+                        visually appealing but also robust and maintainable.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="education">
+            <h1 class="education-heading1">Education</h1>
+            <div class="education-main-div">
+                <div class="college">
+                    <h5 class="heading5">2019-2021</h5>
+                    <h1 class="heading1">Punjab Group of Colleges</h1>
+                    <h3 class="heading3">FSc (Pre-Engineering)</h3>
+
+                </div>
+
+                <div class="uni">
+                    <h5 class="heading5">2021-2025</h5>
+                    <h1 class="heading1">International Islamic University Islamabad</h1>
+                    <h3 class="heading3">Bachelor's in Computer Science</h3>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="skillSection" id="skills">
+            <h1 class="skillheading1">Skills</h1>
+            <h3 class="text-color">What I have done so far</h3>
+
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html1 logo.jpg" alt="">
+                    <div class="vertical-title">
+                        Frontend Developer
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="web developer logo.png" alt="">
+                    <div class="vertical-title">
+                        Web Developer
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="react logo.png" alt="">
+                    <div class="vertical-title">
+                        React.js Developer
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="node js logo.png" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="web developer logo.png" alt="">
+                    <div class="vertical-title">
+                        Full Stack Developer
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="mern logo.png" alt="">
+                    <div class="vertical-title">
+                        MERN Stack Developer
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="contactheading1">Contact Me</h1>
+            <div class="contact-div">
+                <form action="" class="contact-form">
+                    <h1>Send A Message</h1>
+
+                    <label for="email"><br>Name <br>
+                        <input type="text" placeholder="Enter Name" name="name" required class="contact-input" />
+                    </label>
+                    <label for="email"><br>Email<br>
+                        <input type="text" placeholder="Enter Email" name="email" required class="contact-input" />
+                    </label>
+                    <label for="psw"><br> Message<br>
+                        <input type="text" placeholder="Enter Message" name="message" class="contact-input" />
+                    </label>
+                    <br>
+                    <button type="submit" class="btn-contact">Submit</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+    <footer id="contact" >
+        <div className='SocialMediaIcons'>
+            <ul>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube-play"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-div">+92 300 08098674 | abdullahhunjra111@gmail.com</div>
+
+        <div class="footer-center">
+            Copyright &#169; abdullah'sportfolio.com | All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
